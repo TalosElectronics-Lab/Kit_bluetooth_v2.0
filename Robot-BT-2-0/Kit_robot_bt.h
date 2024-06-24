@@ -1,6 +1,6 @@
 #include "Robot.h"
 #include <SoftwareSerial.h>
-#include <Servo.h>
+
 
 class Kit_robot_bt : public Robot
 {
@@ -20,7 +20,7 @@ private:
     uint8_t Angulo_min = 0;
     uint8_t Angulo_max = 180;
     uint8_t velocidad_giro = 50;
-    Servo servo_1;
+
     float distancia;
 
     const uint8_t S1 = A0;

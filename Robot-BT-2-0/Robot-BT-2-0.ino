@@ -22,22 +22,10 @@ void setup()
 {
     robot.init();
     Serial.begin(9600);
-    robot.compensar_motor_izquierdo(-10); // Compensar motor izquierdo porque avanza mucho mas rapido
-    robot.compensar_motor_derecho(20);    // Compensar motor derecho porque avanza lento
+    
 }
 void loop()
 {
     menu = robot.modo_bluetooth();
-    switch (menu)
-    {
-
-    case 'a':
-        robot.modo_seguidor(8, .2, 5, 50);
-
-        break;
-
-    case 'c':
-        robot.modo_evasor(25, 100); // 25cm=Distancia del obstaculo
-        break;
-    }
+  
 }
