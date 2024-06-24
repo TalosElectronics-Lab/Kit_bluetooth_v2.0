@@ -100,12 +100,12 @@ char Kit_robot_bt::modo_bluetooth()
     else if (Estado == '1')
     {
         // Girar a la izquierda
-        Motores_mv(Velocidad_Max, -Velocidad_Max);
+        Motores_mv(-Velocidad_Max, Velocidad_Max);
     }
     else if (Estado == '2')
     {
         // Girar a la derecha
-        Motores_mv(-Velocidad_Max, Velocidad_Max);
+        Motores_mv(Velocidad_Max, -Velocidad_Max);
     }
     else if (Estado == '7')
     {
